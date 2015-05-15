@@ -1,0 +1,73 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 13/05/2015 14:07:34
+
+BeginCmp
+TimeStamp = /5550F58B;
+Reference = BTNPAD1;
+ValeurCmp = ADAFRUIT_TRELLIS;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5550F8AB;
+Reference = ENC1;
+ValeurCmp = ENCODER_LED_PB;
+IdModule  = SPARKFUN_ROTARY_ENCODER;
+EndCmp
+
+BeginCmp
+TimeStamp = /5550F89E;
+Reference = ENC2;
+ValeurCmp = ENCODER_LED_PB;
+IdModule  = SPARKFUN_ROTARY_ENCODER;
+EndCmp
+
+BeginCmp
+TimeStamp = /5553778F;
+Reference = J1;
+ValeurCmp = JACK_ST_3SW_PROPER;
+IdModule  = Jack_6.35_Stereo_SW;
+EndCmp
+
+BeginCmp
+TimeStamp = /5550F5C5;
+Reference = LCD1;
+ValeurCmp = 5110;
+IdModule  = pin_array_8x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5550F8BD;
+Reference = MCU1;
+ValeurCmp = PRO_MINI_2;
+IdModule  = ProMiniThick;
+EndCmp
+
+BeginCmp
+TimeStamp = /55537074;
+Reference = MP31;
+ValeurCmp = VS1053_ADAFRUIT;
+IdModule  = VS1030_Adafruit;
+EndCmp
+
+BeginCmp
+TimeStamp = /5553738D;
+Reference = P1;
+ValeurCmp = DIN_5;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5553739A;
+Reference = P2;
+ValeurCmp = DIN_5;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5550FAF1;
+Reference = U1;
+ValeurCmp = 4050;
+IdModule  = DIP-16__300_ELL;
+EndCmp
+
+EndListe
