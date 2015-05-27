@@ -1,0 +1,135 @@
+
+(rules PCB Secuenciador
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 763)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 254.0)
+    (clear 254.2)
+    (clear 127.0 (type smd_to_turn_gap))
+    (clear 63.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_889:0_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+  )
+  (via 
+    "Via[0-1]_889:0_um" "Via[0-1]_889:0_um" default
+  )
+  (via 
+    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:0_um-kicad_default" "Via[0-1]_889:0_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:635_um-Speed" "Via[0-1]_889:635_um" Speed
+  )
+  (via 
+    "Via[0-1]_889:0_um-Speed" "Via[0-1]_889:0_um" Speed
+  )
+  (via 
+    "Via[0-1]_889:635_um-Supply" "Via[0-1]_889:635_um" Supply
+  )
+  (via 
+    "Via[0-1]_889:0_um-Supply" "Via[0-1]_889:0_um" Supply
+  )
+  (via_rule
+    default "Via[0-1]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+  )
+  (via_rule
+    Speed "Via[0-1]_889:635_um-Speed"
+  )
+  (via_rule
+    Supply "Via[0-1]_889:635_um-Supply"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /Boot1 "/CS_3V3" "/DC_3V3" "/ENC1_A" "/ENC1_B" "/ENC1_L1" "/ENC1_L2" "/ENC1_SW"
+    "/ENC2_A" "/ENC2_B" "/ENC2_L1" "/ENC2_SW" /LOUT /MIC+ /ROUT "/RST_3V3"
+    "/VS1053_CS" "/VS1053_DREQ" "/VS1053_SDCS" "/VS1053_XDCS" "N-0000024" "N-0000027" "N-0000028" "N-0000032"
+    "N-0000033" "N-0000034" "N-0000039" "N-0000040"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Speed
+    "/MIDI_IN" "/MIDI_OUT" "/MOSI_3V3" "/PROG_DTR" "/PROG_RX" "/PROG_TX" /SCL "/SCLK_3V3"
+    /SDA "/VS1053_MISO" "/VS1053_MOSI" "/VS1053_RST" "/VS1053_SCLK"
+    (clearance_class Speed)
+    (via_rule Speed)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Supply
+    GND +3.3V +5V "/DISP_LED" AGND VCC
+    (clearance_class Supply)
+    (via_rule Supply)
+    (rule
+      (width 304.8)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

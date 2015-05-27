@@ -1,4 +1,4 @@
-update=25/05/2015 14:25:26
+update=13/05/2015 14:06:03
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -56,10 +56,10 @@ LibName35=D:/GitHub/KiCad_Libraries/Jacks
 version=1
 LastNetListRead=
 UseCmpFile=1
-PadDrill=0.998220000000
-PadDrillOvalY=0.998220000000
-PadSizeH=1.506220000000
-PadSizeV=3.014980000000
+PadDrill=1.100000000000
+PadDrillOvalY=1.100000000000
+PadSizeH=1.800000000000
+PadSizeV=1.800000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -95,4 +95,3 @@ LibName19=Modules
 LibName20=MP3_MODULES
 LibName21=Connectors
 LibName22=Encoders
-LibName23=Screws
